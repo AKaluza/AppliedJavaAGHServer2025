@@ -14,8 +14,8 @@ public class Main {
 //        final var cave = new SimpleCave(60, 160);
         final var cave = new DrunkenCave(60, 160);
         final var game = new Game(cave);
-        final var server = new Server(game, "{\"known\":[{\"authorize\":{\"type\":\"A\",\"key\":\"1234\"},\"player\":{\"type\":\"P\",\"name\":\"Player0\"}}]}");
-        // final var server = new Server(game, Path.of("config/configuration.json"));
+        //final var server = new Server(game, "{\"known\":[{\"authorize\":{\"type\":\"A\",\"key\":\"1234\"},\"player\":{\"type\":\"P\",\"name\":\"Player0\"}}]}");
+        final var server = new Server(game, Path.of("config/configuration.json"));
         server.start(8080);
     }
 }
